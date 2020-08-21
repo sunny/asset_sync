@@ -363,8 +363,7 @@ AssetSync.configure do |config|
   config.add_local_file_paths do
     # Any code that returns paths of local asset files to be uploaded
     # For example, files added by Webpacker:
-    Webpacker.config.public_output_path.glob('/**/**')
-    end
+    Webpacker.config.public_output_path.glob('**/**')
   end
 end
 ```
